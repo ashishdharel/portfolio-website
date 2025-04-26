@@ -1,1 +1,115 @@
-<h1>Ashish Dharel</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ashish Dharel | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Smooth scrolling -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ashish Dharel</h1>
+    <p>Junior DevOps Engineer</p>
+    <p>Email: <a href="mailto:ashishdharel669@gmail.com">ashishdharel669@gmail.com</a> | Phone: +977-9866360669</p>
+    <p>Khairahani-6, Chitwan, Nepal</p>
+    
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an aspiring Junior DevOps Engineer passionate about enhancing system<br>
+        reliability and optimizing workflows. As a curious and adaptable person,<br>
+        I thrive in team environments and am eager to contribute to a dynamic team.
+      </p>
+      
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>Cloudlaya Technologies | DevOps Intern</h3>
+      <p><strong>May 2024 - August 2024 | Lalitpur, Nepal</strong></p>
+      <ul>
+        <li>Deployed and managed web applications on AWS using EC2 instances and S3 for static file hosting.</li>
+        <li>Built a CI/CD pipeline for MERN-based web apps using GitHub Actions, automating testing and Dockerized deployments to AWS.</li>
+        <li>Integrated security tools like SonarQube for automated code scanning.</li>
+        <li>Configured Linux systems, networking protocols (TCP/IP, DNS), and secured communications with SSL/TLS and firewalls.</li>
+        <li>Deployed and managed Nginx and Apache servers; implemented load balancing and reverse proxy setups.</li>
+        <li>Developed Git branching strategies to support multi-team collaboration.</li>
+        <li>Designed multi-environment CI/CD pipelines deploying Docker images to AWS ECR and EC2 using Docker Compose.</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Indreni College</strong> — Bachelor in Computer Science and Information Technology (2018-2023)</li>
+        <li><strong>Prerana College Secondary School</strong> — (+2 Science, 2016-2018)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python.</li>
+        <li><strong>Database Systems:</strong> MySQL.</li>
+        <li><strong>Cloud Technologies:</strong> AWS.</li>
+        <li><strong>DevOps & Version Control:</strong> Docker, Kubernetes, Git, GitHub Actions.</li>
+        <li><strong>Other Tools:</strong> Slack.</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Technical Essentials</li>
+        <li>AWS Partner: Technical Accredited</li>
+        <li>AWS Knowledge: Cloud Essentials</li>
+        <li>AWS Knowledge: Architecting</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Ashish Dharel. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll Animation -->
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    window.addEventListener('scroll', () => {
+      sections.forEach(sec => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 500;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          sec.classList.add('show');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
